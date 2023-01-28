@@ -13,35 +13,16 @@ import java.util.Scanner; // import the Scanner class
 
 class Main {
   public static void main(String[] args) {
+    String userName = "";
+    String greeting = "";
     Scanner myObj = new Scanner(System.in);
-    String userName;
-    
     // Enter username and press Enter
-    System.out.println("Enter username"); 
-    userName = myObj.nextLine();   
-       
-    System.out.println("Username is: " + userName);        
+    System.out.println("Hello enter username");
+    userName = myObj.nextLine();
+
+    greeting = "Hello " + userName + ". How are you today?";
+
+    System.out.println("\n\n" + "Username is: " + userName);
+    System.out.println("\n\n" + greeting + "\n\n");
   }
-}
-
-import java.util.Scanner;
-public class HelloWorld01 {
-    public static void main(String[] args) {
-        // Variable declaration section.
-        String userName = "";
-        String greeting = "";
-        Scanner userInput = new Scanner(System.in);
-
-        System.out.println("\n\n");
-        // Input: get user name
-        System.out.println("Hello user, enter your preferred name: ");
-        userName = userInput.nextLine();
-
-        // Processing: Create a greeting
-        greeting = "Hello " + userName + " how are you today?";
-
-        // Output:
-        System.out.println("\n\n" + greeting + "\n\n");
-
-    }
 }
