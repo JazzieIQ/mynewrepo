@@ -15,11 +15,11 @@ class Main {
   public static void main(String[] args) {
     String userName = "";
     String greeting = "";
-    Scanner myObj = new Scanner(System.in);
-    // Enter username and press Enter
-    System.out.println("Hello enter username");
-    userName = myObj.nextLine();
-
+    try (Scanner myObj = new Scanner(System.in)) {
+      // Enter username and press Enter
+      System.out.println("Hello enter username");
+      userName = myObj.nextLine();
+    }
     greeting = "Hello " + userName + ". How are you today?";
 
     System.out.println("\n\n" + "Username is: " + userName);
